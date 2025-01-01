@@ -1,0 +1,631 @@
+
+<!doctype html>
+<head>
+<title>Menu</title>
+
+<meta names="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+
+
+<style>
+
+
+
+@keyframes multicolor
+{
+10%{color:blue}
+20%{color:orange}
+30%{color:violet}
+40%{color:red}
+50%{color:yellow}
+60%{color:green}
+70%{color:orange}
+80%{color:yellow}
+90%{color:green}
+100%{color:cyan}
+}
+
+
+#topad
+{
+color:red;
+text-align:center;
+font-size:40px;
+font-family:arial black ;
+text-transform:uppercase ;
+text-align: center;
+margin: auto;
+animation:multicolor 12s infinite ;
+}
+
+@keyframes showadd
+{
+0% {background-image:url(img/5.jpeg); }
+10% {background-image:url(img/6.jpeg); }
+20% {background-image:url(img/7.jpeg); }
+30% {background-image:url(img/8.jpeg); }
+40% {background-image:url(img/9.jpeg); }
+50% {background-image:url(img/10.jpeg); }
+60% {background-image:url(img/11.jpeg); }
+70% {background-image:url(img/12.jpeg); }
+80% {background-image:url(img/13.jpeg); }
+90% {background-image:url(img/14.jpeg); }
+100% {background-image:url(img/15.jpeg); }
+}
+
+@keyframes showadd
+{
+0% {background-image:url(img/5.jpeg); }
+10% {background-image:url(img/6.jpeg); }
+20% {background-image:url(img/7.jpeg); }
+30% {background-image:url(img/8.jpeg); }
+40% {background-image:url(img/9.jpeg); }
+50% {background-image:url(img/19.jpeg); }
+60% {background-image:url(img/18.jpeg); }
+70% {background-image:url(img/12.jpeg); }
+80% {background-image:url(img/13.jpeg); }
+90% {background-image:url(img/28.jpg); }
+100% {background-image:url(img/15.jpeg); }
+}
+
+
+
+footer
+{
+
+display:flex;
+width:100%;
+background:black;
+color:white;
+height: 400px;;
+margin:auto;
+justify-content:space-between;
+
+}
+#mcopy{
+width:50%;
+padding:20px;
+height:300px;
+}
+
+#sitemap
+{
+width:50%;
+padding:20px;
+height:300px;
+}
+
+
+#socialmedia{
+width:30%;
+padding:20px;
+height:300px;
+
+}
+
+
+#banner1
+{
+width:90%;
+height:500px;
+top:100%;
+margin:auto;
+background-image:url(images/XMAS_BANNER_24.gif);
+background-size:50% 100%;
+animation:showadd 19s infinite;
+}
+
+
+
+
+header
+{
+width:98%;
+height:300px;
+border:1px black solid;
+}
+
+nav{
+width:96%;
+//border:1px black solid;
+padding:10px;
+margin:auto;
+margin-top:5px;
+}
+
+
+
+
+#container
+{
+border:1px black solid;
+
+
+}
+
+
+#icon{
+cursor:pointer;
+//display:none;
+width:10%;
+}
+
+
+#menu
+{
+}
+
+#menu ol li
+{
+list-style:none;
+//display:inline;
+background:#DEFAFF;
+padding:20px;
+tansititon:0.50s;
+margin-left:10px;
+width:30%;
+display:none;
+margin-left:-40px;
+margin-top:-20px;
+}
+
+
+#menu ol li:hover
+{
+background:#a8daf1;
+width:30%;
+}
+
+#menu ol li:hover a:link
+{
+color:black;
+background:nn;
+transform:scale(1.50); rotation(180deg);
+border-radius:15px;
+}
+
+
+
+#menu ol li a:link
+{
+color:black;
+}
+
+#menu ol li a:visted
+{
+color:white;
+}
+
+#menu ol li a:hover
+{ 
+color:black;
+}
+
+#container:hover #menu ol li
+{
+display:block;
+}
+
+#divpic
+{
+display:flex;
+justify-content:center;
+justify-content:start;
+align-items:center;
+flex-wrap:wrap;
+padding:50px;
+}
+
+.picstyle
+{
+width:350px;
+height:200px;
+border:2px solid gray;
+border-radius:13px;
+box-shadow:4px 7px 7px 0px gray;
+cursor:pointer;
+margin:10px;
+transition:400ms;
+background-size:50% 100%;
+}
+
+.picstyle:hover{
+transform:scale(1.10);
+filter:grayscale(1);
+}
+
+
+*{
+box-sizing:border-box;
+}
+ol li{display:inline:padding:20px}
+
+@keyframes ani1
+{
+from{margin-left:0px;}
+to{margin-left:-690%}
+}
+
+
+
+
+#mask
+{
+background:black;
+width:80%;
+height:80px;
+box-shaddow:10px 10px 10px gray;
+overflow:hidden;
+margin: auto;
+border-radius: 20px;
+}
+
+#news
+{
+color:white;
+width:800%;
+height:50px;
+font-family:arial black;
+font-size:50px;
+padding:10px;
+transition:2s;
+z-index:-1;
+animation:ani1 40s linear infinite;
+}
+
+
+#navbar
+{
+background:tal;
+cursor:pointer;
+}
+
+#navbar ol
+{
+
+margin:auto;
+width:40%;
+margin-top:50px;
+text-align:centre;
+}
+
+#navbar ol li
+{
+list-style:none;
+
+padding:30px;
+background:#32a7eb;
+margin-left:0px;
+transition:1s;
+box-shadow: 10px 5px 10px gray;
+
+}
+
+
+#navbar ol li:hover
+{
+transform:scale(1.20); rotation(180deg);
+border-radius:15px;
+background:#F06417;
+
+}
+
+/*extra small devices(phones,600px and down)*/
+
+@media only screen and (max-width:600px)
+{
+body{background:gree}
+
+
+}
+
+
+/*small devices (portrait tab andlarge phones.600px and up)*/
+
+@media only screen and (min-width:600px)
+{
+
+body{background:yello}
+#container{
+width:100%;
+height:300px;
+top:100%
+}
+
+
+}
+}
+
+/* medium devices(landscapes tab ,768px and up)*/
+
+@media only screen and (min-width:768px)
+{
+body{background:cya}
+@keyframes runbanner
+{
+10%{left:0%;}
+
+20%{left:-20%;}
+30%{left:-20%;}
+
+40%{left:-40%;}
+50%{left:-40%;}
+
+60%{left:-60%;}
+70%{left:-60%;}
+
+80%{left:-80%;}
+90%{left:-80%;}
+}
+
+
+body{
+//overflow:hidden;
+overflow-x:hidden;
+}
+
+#banner
+{
+width:500%;
+height:600px;
+
+}
+
+.pic
+{
+box-shadow:10px 10px 10px gray;
+width:20%;
+height:900px;
+position:relative;
+margin-top:-10px;
+left:10%;
+margin-left:-10px;
+animation:runbanner 9s infinite;
+}
+
+}
+
+/* large devices(laptop/destop,992px and up)*/
+
+@media only screen and (min-width:992px)
+{
+body{background:ornag;}
+@keyframes runbanner
+{
+10%{left:0%;}
+
+20%{left:-20%;}
+30%{left:-20%;}
+
+40%{left:-40%;}
+50%{left:-40%;}
+
+60%{left:-60%;}
+70%{left:-60%;}
+
+80%{left:-80%;}
+90%{left:-80%;}
+}
+
+
+body{
+//overflow:hidden;
+overflow-x:hidden;
+}
+
+#banner
+{
+width:500%;
+height:600px;
+
+}
+
+.pic
+{
+box-shadow:10px 10px 10px gray;
+width:20%;
+height:900px;
+position:relative;
+margin-top:-10px;
+left:10%;
+margin-left:-10px;
+animation:runbanner 18s infinite;
+}
+
+
+}
+
+/*extra large devices(large laptop and desktop,1200px and up)*/
+
+@media only screen and (min-width:1200px)
+{
+body{background:brow}
+
+
+#banner
+{
+width:500%;
+height:600px;
+
+}
+
+.pic
+{
+box-shadow:10px 10px 10px gray;
+width:20%;
+height:900px;
+position:relative;
+margin-top:-10px;
+left:10%;
+margin-left:-10px;
+animation:runbanner 18s infinite;
+}
+
+}
+
+
+
+#div2
+{
+//display:inline;
+width:100%;
+margin:auto;
+}
+
+
+</style>
+
+
+
+
+<body>
+
+<div id="div2">
+
+
+   <div style="width:100%;margin:auto ">
+
+   <img src="images/live_now_last_one_Banner_mob.gif" width="100%" alt="3" >
+   </div>
+
+
+     
+      <div id="mask">
+      <div id="news">Last Date 24-26 December 2024/12:00//
+        Last Date 24-26 December 2024/12:00//Last Date 24-26 December 2024/12:00//
+        Last Date 24-26 December 2024/12:00//
+        Last Date 24-26 December 2024/12:00//Last Date 24-26 December 2024/12:00//
+        Last Date 24-26 December 2024/12:00//
+        Last Date 24-26 December 2024/12:00//
+        Last Date 24-26 December 2024/12:00//
+        Last Date 24-26 December 2024/12:00//
+        Last Date 24-26 December 2024/12:00//
+    </div>
+    </div>
+
+
+
+
+
+
+    </div>
+    </nav>
+
+<div style="width:100%;margin:auto ">
+
+   <img src="images/Screenshot_2024_12_15-2.png" width="100%" alt="3" >
+   </div>
+
+
+    
+
+    <div id="navbar">
+    <h1 style="text-align:center;font-family:verdana,Arial black;font-size:20px;color:Black;">
+    <ol>
+      
+
+<br>
+
+
+
+    <li><a href="#">Fill Code</a></li>
+     <td><label for="password">Code</label></td><td><input Placeholder="Paste Code Here...."
+id="password" type="password" required></td>
+</tr>
+<td><a href="activ.html"><input type="submit" value="Register" ></a><input type="reset"></td>
+</tr>
+    <h1 style="text-align:center;background:#;color:white;font-family:Arial black;font-size:60px;
+    box-shadow:10px 10px 10px gray"></h1>
+
+    </ol>
+
+    </div>
+
+</div>
+
+
+    
+<div id="topad" >
+Save Deals
+</div>
+
+
+
+
+
+
+
+
+<footer>
+
+    &#8482;  
+  <div id="mcopy">CopyRight<ol style="list-style:none:padding:0px">
+  <li> Details
+  </li>
+  <li> Students
+  </li>
+  <li> Rules
+  </li>
+  <li>Deals
+  </li>
+  </ol>
+  <li><a href="https://rumble.com/c/c-6816266/"><i class="fa-brands fa-square-youtube"></i></a></li>
+  <p>
+  </p>
+  &#169
+  <ol style="list-style-image:url(images/92.png)">
+  <li>Company</li>
+  <li>Resrved Category</li>
+  <li>Other Brands</li>
+  <li>Cases</li>
+  </ol>
+  </div>
+  
+  
+  &#174;
+  <div id="sitemap">Site Map<ol style="list-style:none;padding:0px">
+  <li> Details
+  </li>
+  <li> Students
+  </li>
+  <li> Rules
+  </li>
+  <li>Deals
+  </li>
+  </ol>
+  
+  
+    <li><a href="https://www.instagram.com/arenadelhi/"><i class="fa-brands fa-instagram"></i></a></li>
+  
+  
+    <li>Corporate headquarters</li>
+    <li>A- 50 &amp; 51, 3rd Floor, Prem Nagar, Uttam Nagar,Delhi-110059</li>
+    <li>HEAD OFFICE</li>
+    <li>Plot No. A-56, 1st Floor, Rama Park Road, Uttam Nagar, New Delhi 110059</li>
+    <li>info@showtimeevent.com</li>
+    </ul>
+  
+  
+  </footer>
+  
+  <div class="title">Support Team</div>
+    <h3>+91 - 98XXXXXXX</h3>
+    <ul>
+    <li>+91 - 70XXXXXXX</li>
+    </ul>
+  </div>
+  
+</body>
+  
+ </html>
+
+
+
+
+
+
+
+
+

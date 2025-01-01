@@ -1,0 +1,530 @@
+
+<!doctype html>
+<html>
+<head><title></title></head>
+<style>
+
+body{
+    overflow-x: hidden;
+}
+
+
+@keyframes blink
+{from{opacity:0}
+to{opacity:1}
+}
+
+
+p{
+  text-align:center;
+  font-size:15px;
+  font-family:Arial, Helvetica, sans-serif;
+  color:black;
+  text-indent:100px;
+  
+}
+
+
+
+header{
+  width:100%;
+  margin:auto;
+  text-align:center;
+  height:400px;
+}
+
+.body{
+  overflow-x: hidden;
+}
+
+.picstyle{
+
+height:250px;
+position:absolute;
+width:100%;
+margin:auto;
+top:10%;
+border-radius: 20px;
+box-shadow:5px 5px 5px gray;
+transition:2s ease-in-out;
+
+}
+
+footer
+{
+
+display:flex;
+width:100%;
+background:black;
+color:white;
+//padding:20px;
+height: 400px;;
+margin:auto;
+justify-content:space-between;
+
+}
+#mcopy{
+width:50%;
+padding:20px;
+height:300px;
+}
+
+#sitemap
+{
+width:50%;
+padding:20px;
+height:300px;
+}
+
+
+#socialmedia{
+width:30%;
+padding:20px;
+height:300px;
+
+}
+
+.car{
+background:goldenrod;
+width:270px;
+height:100px;
+margin:10px;
+background-size: cover;
+border-radius: 10px;
+text-align: center;
+animation:blink 1s ease-in infinite alternate;
+
+}
+
+
+
+.car a{
+  background-color: black;
+  color:white;
+  padding:15px;
+  display:block;
+  text-align: center;
+  
+
+}
+
+.car:hover{
+
+  background-color:chocolate;
+  color:greenyellow;
+  cursor:pointer;
+  transform:scale(1.03);
+  transition: all 1s ease;
+  
+
+}
+
+.wow{
+display:flex;
+justify-content:center;
+flex-wrap: wrap;
+
+}
+
+ul{
+list-style:none;
+margin:auto;
+background:rgb(48, 22, 22);
+border-radius: 30px;
+}
+
+ul li{
+display:inline-block;
+position:relative;
+
+}
+
+ul li a{
+display:block;
+border-radius:25px;
+padding:15px;
+color:white;
+text-decoration:none;
+text-align:center;
+font-size:20px;
+
+}
+
+ul li ul.dropdown li{
+display:block;
+
+}
+
+ul li ul.dropdown{
+width:200%;
+position:absolute;
+z-index:1;
+display:none;
+opacity:0.60;
+
+}
+
+
+ul li a:hover{
+background:teal;
+}
+
+ul li:hover ul.dropdown{
+display:block;
+}
+
+#zz{
+  width:80%;
+  margin:auto;
+  text-align: center;
+}
+
+
+
+
+#cont{
+  margin:auto;
+  width: 100%;
+  height:450px;
+  justify-content:center;
+  gap:20px;
+
+
+}
+
+.cont img{
+
+  width:10%;
+  height:100px;
+  align-items: center;
+  flex-direction: column;
+  object-fit: cover;
+  border-radius: 10px;
+  border:2px solid black;
+  transition: all ease-in-out 0.5s;
+  text-align: center;
+}
+
+.cont img:hover{
+  width:25%;
+  margin:auto;
+
+}
+
+
+
+.pic1
+ {
+ box-shadow:10px 10px 10px gray;
+ width:10%;
+ height:100px;
+ position:relative;
+ margin-top:-10px;
+ margin: auto;
+ text-align: center;
+ 
+
+ }
+
+
+</style>
+
+<body>
+
+  <div id="zz">
+    <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="#">Photos</a>
+    <ul class="dropdown">
+    <li><a href="pic.html">Best of Year</a></li>
+    </ul>
+    </li>
+    <li><a href="map.html">Map</a></li>
+  
+    <li><a href="book.html">Book Appointment</a></li>
+    </ul>
+    </div>
+    
+</body>
+
+
+<body onLoad="show()">
+
+    <img class="picstyle" id="p1" src="images/2f7883b4-2fcc-49ef-bb14-6e7d10c4ca96.gif" />
+    <img class="picstyle" id="p2" src="images/Screenshot_2024_12_15-6.png" />
+    <img class="picstyle" id="p3" src="images/1173_AB_BB_Store_TopBanner_1242x500.gif" />
+    <img class="picstyle" id="p4" src="images/Black-Friday-Sale-live.gif" />
+    <img class="picstyle" id="p5" src="images/live_now_last_one_Banner_mob.gif" />
+    
+    
+   
+    <script>
+        var c= -2
+        var t
+        //recusrive funtion
+     
+         var p1 = document.getElementById("p1")
+         var p2 = document.getElementById("p2")
+         var p3 = document.getElementById("p3")
+         var p4 = document.getElementById("p4")
+         var p5 = document.getElementById("p5")
+         
+         
+        //function show():void
+        function show()
+        {
+             if(c<5)
+               {
+                c++
+               }
+     
+               else
+               {
+               c=1
+               }
+     
+           switch(c)
+           {
+               case 1:
+               p5.style.opacity =0
+               break;
+               case 2:
+               p4.style.opacity =0
+               break;
+               case 3:
+               p3.style.opacity =0
+               break;
+               case 4:
+               p2.style.opacity =0
+               break;
+               case 5:
+               p1.style.opacity =1
+               p2.style.opacity =1
+               p3.style.opacity =1
+               p4.style.opacity =1
+                break;
+     
+     
+           }
+             
+           
+           
+           
+         document.title = c
+         t=setTimeout("show()",3000)
+        }
+               
+            
+               
+     
+     
+        //timer object
+        // var t=setinterval("show()",1000)
+      </script>
+     
+     
+   
+</body>  
+
+  
+<br>
+<br>
+<br>
+<br>
+
+<body>
+<h1 style="font-family:Helvetica, sans-serif black;font-size:30px;color:black;
+text-align:center">Best Photography-Vediography in Delhi</h1>
+
+<p>
+A Shopping is the biggest day for a couple and a family but the  photoshoot event is also one of the exciting things for all of us. There are lots of things to do in a  photoshoot event. You must have something in your mind about these events but, you will require good  event planners to organize all the activities and functions in these events in Delhi, Noida, Gurgaon and Faridabad. Showtime Event is working for these kinds of events and have given lots of wonderful events to the clients. We promise you also to give you the wanted results from your shoot event. We work for perfection and these events require this thing the most. Our staff will plan everything after getting all the details about the venue, guests, budget and type of event.
+</p>
+
+
+<h1 style="font-family:Helvetica, sans-serif black;font-size:30px;color:black;
+text-align:center">Our Highlights</h1>
+
+<p>
+    We are giving you the best and top class
+    service for all kind of events. We make sure that we do every work as our own work and give you the proper fun and enjoyment from the event.
+</p>
+
+
+<br>
+
+<h1 style="font-family:Helvetica, sans-serif black;font-size:30px;color:black;
+text-align:center">Students</h1>
+
+<p>
+    A Christmas party is the most important event for every couple. If you are planning to do buy laptops  too then we will help you to give you best opinion it in an interesting way. We are here with lots of ideas and themes to make your Students life a big enjoyable event for everyone in the areas of Delhi, Noida etc.
+</p>
+
+<h1 style="font-family:Helvetica, sans-serif black;font-size:30px;color:black;
+text-align:center">Costume Parties</h1>
+
+<p>
+    These parties are done for the Christmas guy and girls who are going to get Gifts soon. These parties should be done in a way that they should be entertaining for every family members. We will provide you the best service for these parties. You will get the best services for food, decoration, drinks, music and other fun activities.
+</p>
+
+
+<h1 style="font-family:Helvetica, sans-serif black;font-size:30px;color:black;
+text-align:center">Celebration With Sale</h1>
+
+
+
+  
+ <div class="cont">
+
+ 
+  <img src="images/119701684_3645328762151956_325285885047774781_n.png"   alt="3" class="pic1" >
+  
+  
+
+  
+  
+  <img src="images/black-friday-black-friday-sales.gif"  alt="3" class="pic1" >
+ 
+  
+  
+  
+  <img src="images/FHyCyx5VUAAMM5-.jpg"   alt="3" class="pic1" >
+ 
+
+ 
+  <img src="images/FleIRgTaYAE7vWR.jpeg"   alt="3" class="pic1" >
+  
+
+ 
+  <img src="images/4d0583547cbc1a8ec55dc5efb2335733.gif"  alt="3" class="pic1" >
+  
+</div>
+
+<h2 style="font-family:Helvetica, sans-serif black;font-size:30px;color:green;
+text-align:center">If you want that good events fun should be organized for your Christmas event then choosing us as your Christmas Friend in Delhi Gurgaon, Noida and Faridabad will be the best decision. We will serve you with full dedication and uniqueness. If you have any type of query then feel free to contact us anytime</h2>
+
+
+
+<body>
+    <section class="wow">
+      <div class="car">
+        <div class="car-img "></div>
+        <h2>Electronics</h2>
+        
+      </div>
+      
+      <div class="car">
+        <div class="car-img "></div>
+        <h2>Laptops</h2>
+        
+      </div>
+    
+      <div class="car">
+        <div class="car-img "></div>
+        <h2>Refigrator</h2>
+       
+
+    
+      </div>
+
+
+      <div class="car">
+        <div class="car-img "></div>
+        <h2>Gaming Pc</h2>
+        
+      </div>
+      
+      <div class="car">
+        <div class="car-img "></div>
+        <h2>Big Brands</h2>
+        
+      </div>
+    
+      <div class="car">
+        <div class="car-img "></div>
+        <h2>Affordable Budget</h2>
+        
+        </div>
+
+        <div class="car">
+            <div class="car-img "></div>
+            <h2>LCD TV</h2>
+            
+            </div>
+
+            <div class="car">
+                <div class="car-img "></div>
+                <h2>Figures</h2>
+                
+                </div>
+
+                <div class="car">
+                    <div class="car-img "></div>
+                    <h2>Branded Clothes</h2>
+                    
+                    </div>
+</section>      
+
+</body>
+
+ 
+
+
+<footer>
+    <div id="mcopy">CopyRight<ol style="list-style:none:padding:0px">
+    <li> Details
+    </li>
+    <li> Students
+    </li>
+    <li> Rules
+    </li>
+    <li>Deals
+    </li>
+    </ol>
+    
+    <p>
+    </p>
+    
+    <ol style="list-style-image:url(images/92.png)">
+    <li>Company</li>
+    <li>Resrved Category</li>
+    <li>Other Brands</li>
+    <li>Cases</li>
+    </ol>
+    </div>
+    
+    
+    
+    <div id="sitemap">Site Map<ol style="list-style:none:padding:0px">
+    <li> Details
+    </li>
+    <li> Students
+    </li>
+    <li> Rules
+    </li>
+    <li>Deals
+    </li>
+    </ol>
+    
+    
+    
+    
+      <div class="title">Support Team</div>
+      <h3>+91 - 98710 09325</h3>
+      <ul>
+      <li>+91 - 7048997969</li>
+      <li>Corporate headquarters</li>
+      <li>A- 50 &amp; 51, 3rd Floor, Prem Nagar, Uttam Nagar,Delhi-110059</li>
+      <li>HEAD OFFICE</li>
+      <li>Plot No. A-56, 1st Floor, Rama Park Road, Uttam Nagar, New Delhi 110059</li>
+      <li>info@showtimeevent.com</li>
+      </ul>
+    
+    
+    </footer>
+    
+    <body style="background-color: #9cbed3;"
+    
+    
+    </body>
+    
+    </html>
